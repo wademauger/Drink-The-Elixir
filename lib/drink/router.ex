@@ -1,4 +1,4 @@
-defmodule ElixirHttp.Router do
+defmodule Drink.Router do
   use Plug.Router
   require Logger
 
@@ -11,7 +11,7 @@ defmodule ElixirHttp.Router do
   end
 
   def start_link do
-    {:ok, _} = Plug.Adapters.Cowboy.http ElixirHttp.Router, []
+    {:ok, _} = Plug.Adapters.Cowboy.http Drink.Router, []
   end
 
   get "/" do

@@ -1,6 +1,6 @@
-defmodule ElixirHttp do
+defmodule Drink do
   @moduledoc """
-  Documentation for ElixirHttp.
+  Documentation for Drink.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule ElixirHttp do
 
   ## Examples
 
-      iex> ElixirHttp.hello
+      iex> Drink.hello
       :world
 
   """

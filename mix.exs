@@ -1,4 +1,4 @@
-defmodule ElixirHttp.Mixfile do
+defmodule Drink.Mixfile do
   use Mix.Project
 
   def project do
@@ -20,7 +20,7 @@ defmodule ElixirHttp.Mixfile do
       :logger,
       :plug,
     ],
-     mod: {ElixirHttp.Application, []}]
+     mod: {Drink.Application, []}]
   end
 
   # Dependencies can be Hex packages:
@@ -35,6 +35,7 @@ defmodule ElixirHttp.Mixfile do
   defp deps do
     [
       cowboy: "~> 1.1",
+      meeseeks: "~> 0.3.1",
       plug: "~> 1.3",
     ]
   end

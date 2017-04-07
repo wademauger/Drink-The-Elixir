@@ -1,4 +1,4 @@
-defmodule ElixirHttp.Application do
+defmodule Drink.Application do
   @moduledoc false
 
   use Application
@@ -7,10 +7,10 @@ defmodule ElixirHttp.Application do
     import Supervisor.Spec, warn: false
 
     children = [
-       worker(ElixirHttp.Router, [])
+       worker(Drink.Router, [])
     ]
 
-    opts = [strategy: :one_for_one, name: ElixirHttp.Supervisor]
+    opts = [strategy: :one_for_one, name: Drink.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

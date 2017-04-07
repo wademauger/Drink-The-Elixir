@@ -4,4 +4,4 @@
 
 - `git clone <this repo>`
 - `mix deps.get`
-
+- `iex -S mix`
